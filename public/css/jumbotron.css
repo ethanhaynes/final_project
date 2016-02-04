@@ -1,0 +1,252 @@
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #F9F9F9;
+}
+
+.input-group{
+    margin-top: 7px;
+}
+
+.btn-custom-darken {
+  color: #ffffff;
+  background-color: #C6D4E1;
+}
+
+.info-box {
+    height: 190px;
+    width: 250px;
+    margin-left: -15px;
+    background-color: grey;
+    border-color: red;
+}
+
+.btn-lines {
+  border-style: solid;
+  border-width: thin;
+  border-color: #8EB2C5;
+  background-color: transparent;
+  color: #8EB2C5;
+  margin-left: 2px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #44749D;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.navbar {
+    background-color: #C6D4E1;
+    border-color: #44749D;
+}
+
+.nav-control {
+    margin-right: auto;
+}
+
+.btn:active {
+    background-color: #44749D;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand {
+    color: #FFFFFF;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.stats {
+    color: #45484B;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    background-color: #EAFDE6;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*https://jsfiddle.net/Wc4xt/1052/*/
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading .collapsed:after {
+    content:"\e080";
+}
+
+.img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.img-style {
+    width: 150%;
+    height: auto;
+    left: 50%;
+    margin-left:-20px;
+    margin-top: -20px;
+}
+
+.rule {
+    overflow: hidden;
+}
+
+.vertical-center {
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #EDEBE6;
+    border-radius: 3px;
+}
+
+.blog {
+    height: auto;
+}
+
+.well_dark {
+    background-color: #FFFFFE;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.reply {
+    margin-left: 10px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.body_display {
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #E9E9E9;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icons {
+    /* keeps the items on single line */
+   white-space: nowrap;
+}
+
+.icons_size {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#grid {
+    width: 620px;
+    height: auto;
+}
+
+.cell {
+    margin: 2px;
+    background-color: white;
+    float: left;
+    height: 15px;
+    width: 15px;
+ }
+
+ .cell-less {
+     background-color: #5D4157;
+ }
+ .cell-more {
+     background-color: #6A5E72;
+ }
+
+ .name {
+     color: #45484B;
+     background-color: transparent;
+     font-weight: lighter;
+     white-space: nowrap;
+ }
+ h2 {
+     margin-top: 5px;
+ }
+
+ .row {
+     text-align: center;
+ }
+
+.nav_tab::before {
+     display: none;
+     background-color: black;
+     height: 200px;
+     width: 200px;
+ }
+ .cell:hover, .nav_tab::after {
+     background-color: #B1E6D1;
+     display: block;
+ }
+
+ .caret {
+     color: white;
+ }
+
+
+/*-------- info div and triagle -----*/
+
+.cell:after {
+    content:'';
+    top: inherit;
+    margin-top: -15px;
+    margin-left: -7px;
+    border-top: solid 15px #B1E6D1;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+}
+
+ .cell::before, .cell::after {
+     position: absolute;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .3s, visibility .3s;
+ }
+
+ .cell::before {
+     text-align: center;
+     content: '3 contributions on June, 12';
+     font-weight: bold;
+     font-size: 1.1rem;
+     width: 160px;
+     height: 50px;
+     line-height: 60px;
+     background: #B1E6D1;
+     border-radius: .25em;
+     margin-top: -65px;
+     margin-left: -70px;
+     top: inherit;
+ }
+
+ .cell:hover::before,
+ .cell:hover::after {
+     opacity: 1;
+     visibility: visible;
+ }
